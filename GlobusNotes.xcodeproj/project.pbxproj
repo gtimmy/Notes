@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A551DC1519B638F8001F75C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A551DC1419B638F8001F75C7 /* Foundation.framework */; };
+		A551DC1719B638F8001F75C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A551DC1619B638F8001F75C7 /* CoreGraphics.framework */; };
+		A551DC1919B638F8001F75C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A551DC1819B638F8001F75C7 /* UIKit.framework */; };
+		A551DC1B19B638F8001F75C7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A551DC1A19B638F8001F75C7 /* CoreData.framework */; };
+		A551DC2119B638F8001F75C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A551DC1F19B638F8001F75C7 /* InfoPlist.strings */; };
+		A551DC2319B638F8001F75C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A551DC2219B638F8001F75C7 /* main.m */; };
+		A551DC2719B638F8001F75C7 /* GNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A551DC2619B638F8001F75C7 /* GNAppDelegate.m */; };
+		A551DC2A19B638F8001F75C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A551DC2819B638F8001F75C7 /* Main.storyboard */; };
+		A551DC2D19B638F8001F75C7 /* GlobusNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A551DC2B19B638F8001F75C7 /* GlobusNotes.xcdatamodeld */; };
+		A551DC3019B638F8001F75C7 /* GNNotesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A551DC2F19B638F8001F75C7 /* GNNotesListViewController.m */; };
+		A551DC3319B638F8001F75C7 /* GNNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A551DC3219B638F8001F75C7 /* GNNoteViewController.m */; };
+		A551DC3519B638F8001F75C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A551DC3419B638F8001F75C7 /* Images.xcassets */; };
+		A551DC3C19B638F8001F75C7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A551DC3B19B638F8001F75C7 /* XCTest.framework */; };
+		A551DC3D19B638F8001F75C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A551DC1419B638F8001F75C7 /* Foundation.framework */; };
+		A551DC3E19B638F8001F75C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A551DC1819B638F8001F75C7 /* UIKit.framework */; };
+		A551DC3F19B638F8001F75C7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A551DC1A19B638F8001F75C7 /* CoreData.framework */; };
+		A551DC4719B638F8001F75C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A551DC4519B638F8001F75C7 /* InfoPlist.strings */; };
+		A551DC4919B638F8001F75C7 /* GlobusNotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A551DC4819B638F8001F75C7 /* GlobusNotesTests.m */; };
+		A551DC5419B63B2F001F75C7 /* GNNoteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A551DC5319B63B2F001F75C7 /* GNNoteTableViewCell.m */; };
+		A551DC5719B63EA9001F75C7 /* GNNotesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A551DC5619B63EA9001F75C7 /* GNNotesProvider.m */; };
+		A551DC6319B6C82F001F75C7 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = A551DC6219B6C82F001F75C7 /* Note.m */; };
+		A57C94EF19B788C000213C65 /* GNPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = A57C94EE19B788C000213C65 /* GNPreferences.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A551DC4019B638F8001F75C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A551DC0919B638F8001F75C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A551DC1019B638F8001F75C7;
+			remoteInfo = GlobusNotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A551DC1119B638F8001F75C7 /* GlobusNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobusNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A551DC1419B638F8001F75C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A551DC1619B638F8001F75C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A551DC1819B638F8001F75C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A551DC1A19B638F8001F75C7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A551DC1E19B638F8001F75C7 /* GlobusNotes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlobusNotes-Info.plist"; sourceTree = "<group>"; };
+		A551DC2019B638F8001F75C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A551DC2219B638F8001F75C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A551DC2419B638F8001F75C7 /* GlobusNotes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlobusNotes-Prefix.pch"; sourceTree = "<group>"; };
+		A551DC2519B638F8001F75C7 /* GNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNAppDelegate.h; sourceTree = "<group>"; };
+		A551DC2619B638F8001F75C7 /* GNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNAppDelegate.m; sourceTree = "<group>"; };
+		A551DC2919B638F8001F75C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A551DC2C19B638F8001F75C7 /* GlobusNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GlobusNotes.xcdatamodel; sourceTree = "<group>"; };
+		A551DC2E19B638F8001F75C7 /* GNNotesListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNNotesListViewController.h; sourceTree = "<group>"; };
+		A551DC2F19B638F8001F75C7 /* GNNotesListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNNotesListViewController.m; sourceTree = "<group>"; };
+		A551DC3119B638F8001F75C7 /* GNNoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNNoteViewController.h; sourceTree = "<group>"; };
+		A551DC3219B638F8001F75C7 /* GNNoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNNoteViewController.m; sourceTree = "<group>"; };
+		A551DC3419B638F8001F75C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A551DC3A19B638F8001F75C7 /* GlobusNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlobusNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A551DC3B19B638F8001F75C7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A551DC4419B638F8001F75C7 /* GlobusNotesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlobusNotesTests-Info.plist"; sourceTree = "<group>"; };
+		A551DC4619B638F8001F75C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A551DC4819B638F8001F75C7 /* GlobusNotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobusNotesTests.m; sourceTree = "<group>"; };
+		A551DC5219B63B2F001F75C7 /* GNNoteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNNoteTableViewCell.h; sourceTree = "<group>"; };
+		A551DC5319B63B2F001F75C7 /* GNNoteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNNoteTableViewCell.m; sourceTree = "<group>"; };
+		A551DC5519B63EA9001F75C7 /* GNNotesProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNNotesProvider.h; sourceTree = "<group>"; };
+		A551DC5619B63EA9001F75C7 /* GNNotesProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNNotesProvider.m; sourceTree = "<group>"; };
+		A551DC6119B6C82F001F75C7 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		A551DC6219B6C82F001F75C7 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		A57C94ED19B788C000213C65 /* GNPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNPreferences.h; sourceTree = "<group>"; };
+		A57C94EE19B788C000213C65 /* GNPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNPreferences.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A551DC0E19B638F8001F75C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A551DC1719B638F8001F75C7 /* CoreGraphics.framework in Frameworks */,
+				A551DC1B19B638F8001F75C7 /* CoreData.framework in Frameworks */,
+				A551DC1919B638F8001F75C7 /* UIKit.framework in Frameworks */,
+				A551DC1519B638F8001F75C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A551DC3719B638F8001F75C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A551DC3C19B638F8001F75C7 /* XCTest.framework in Frameworks */,
+				A551DC3F19B638F8001F75C7 /* CoreData.framework in Frameworks */,
+				A551DC3E19B638F8001F75C7 /* UIKit.framework in Frameworks */,
+				A551DC3D19B638F8001F75C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A551DC0819B638F8001F75C7 = {
+			isa = PBXGroup;
+			children = (
+				A551DC1C19B638F8001F75C7 /* GlobusNotes */,
+				A551DC4219B638F8001F75C7 /* GlobusNotesTests */,
+				A551DC1319B638F8001F75C7 /* Frameworks */,
+				A551DC1219B638F8001F75C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A551DC1219B638F8001F75C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A551DC1119B638F8001F75C7 /* GlobusNotes.app */,
+				A551DC3A19B638F8001F75C7 /* GlobusNotesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A551DC1319B638F8001F75C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A551DC1419B638F8001F75C7 /* Foundation.framework */,
+				A551DC1619B638F8001F75C7 /* CoreGraphics.framework */,
+				A551DC1819B638F8001F75C7 /* UIKit.framework */,
+				A551DC1A19B638F8001F75C7 /* CoreData.framework */,
+				A551DC3B19B638F8001F75C7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A551DC1C19B638F8001F75C7 /* GlobusNotes */ = {
+			isa = PBXGroup;
+			children = (
+				A57C94F319B7892100213C65 /* Managers */,
+				A57C94F019B788CC00213C65 /* Models */,
+				A57C94F219B788F400213C65 /* Views */,
+				A57C94F119B788E600213C65 /* Controllers */,
+				A551DC2519B638F8001F75C7 /* GNAppDelegate.h */,
+				A551DC2619B638F8001F75C7 /* GNAppDelegate.m */,
+				A57C94ED19B788C000213C65 /* GNPreferences.h */,
+				A57C94EE19B788C000213C65 /* GNPreferences.m */,
+				A551DC2819B638F8001F75C7 /* Main.storyboard */,
+				A551DC3419B638F8001F75C7 /* Images.xcassets */,
+				A551DC1D19B638F8001F75C7 /* Supporting Files */,
+			);
+			path = GlobusNotes;
+			sourceTree = "<group>";
+		};
+		A551DC1D19B638F8001F75C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A551DC1E19B638F8001F75C7 /* GlobusNotes-Info.plist */,
+				A551DC1F19B638F8001F75C7 /* InfoPlist.strings */,
+				A551DC2219B638F8001F75C7 /* main.m */,
+				A551DC2419B638F8001F75C7 /* GlobusNotes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A551DC4219B638F8001F75C7 /* GlobusNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A551DC4819B638F8001F75C7 /* GlobusNotesTests.m */,
+				A551DC4319B638F8001F75C7 /* Supporting Files */,
+			);
+			path = GlobusNotesTests;
+			sourceTree = "<group>";
+		};
+		A551DC4319B638F8001F75C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A551DC4419B638F8001F75C7 /* GlobusNotesTests-Info.plist */,
+				A551DC4519B638F8001F75C7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A57C94F019B788CC00213C65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A551DC2B19B638F8001F75C7 /* GlobusNotes.xcdatamodeld */,
+				A551DC6119B6C82F001F75C7 /* Note.h */,
+				A551DC6219B6C82F001F75C7 /* Note.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A57C94F119B788E600213C65 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A551DC2E19B638F8001F75C7 /* GNNotesListViewController.h */,
+				A551DC2F19B638F8001F75C7 /* GNNotesListViewController.m */,
+				A551DC3119B638F8001F75C7 /* GNNoteViewController.h */,
+				A551DC3219B638F8001F75C7 /* GNNoteViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A57C94F219B788F400213C65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A551DC5219B63B2F001F75C7 /* GNNoteTableViewCell.h */,
+				A551DC5319B63B2F001F75C7 /* GNNoteTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A57C94F319B7892100213C65 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A551DC5519B63EA9001F75C7 /* GNNotesProvider.h */,
+				A551DC5619B63EA9001F75C7 /* GNNotesProvider.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A551DC1019B638F8001F75C7 /* GlobusNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A551DC4C19B638F8001F75C7 /* Build configuration list for PBXNativeTarget "GlobusNotes" */;
+			buildPhases = (
+				A551DC0D19B638F8001F75C7 /* Sources */,
+				A551DC0E19B638F8001F75C7 /* Frameworks */,
+				A551DC0F19B638F8001F75C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlobusNotes;
+			productName = GlobusNotes;
+			productReference = A551DC1119B638F8001F75C7 /* GlobusNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A551DC3919B638F8001F75C7 /* GlobusNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A551DC4F19B638F8001F75C7 /* Build configuration list for PBXNativeTarget "GlobusNotesTests" */;
+			buildPhases = (
+				A551DC3619B638F8001F75C7 /* Sources */,
+				A551DC3719B638F8001F75C7 /* Frameworks */,
+				A551DC3819B638F8001F75C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A551DC4119B638F8001F75C7 /* PBXTargetDependency */,
+			);
+			name = GlobusNotesTests;
+			productName = GlobusNotesTests;
+			productReference = A551DC3A19B638F8001F75C7 /* GlobusNotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A551DC0919B638F8001F75C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Artem Goncharov";
+				TargetAttributes = {
+					A551DC3919B638F8001F75C7 = {
+						TestTargetID = A551DC1019B638F8001F75C7;
+					};
+				};
+			};
+			buildConfigurationList = A551DC0C19B638F8001F75C7 /* Build configuration list for PBXProject "GlobusNotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A551DC0819B638F8001F75C7;
+			productRefGroup = A551DC1219B638F8001F75C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A551DC1019B638F8001F75C7 /* GlobusNotes */,
+				A551DC3919B638F8001F75C7 /* GlobusNotesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A551DC0F19B638F8001F75C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A551DC3519B638F8001F75C7 /* Images.xcassets in Resources */,
+				A551DC2119B638F8001F75C7 /* InfoPlist.strings in Resources */,
+				A551DC2A19B638F8001F75C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A551DC3819B638F8001F75C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A551DC4719B638F8001F75C7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A551DC0D19B638F8001F75C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A551DC2319B638F8001F75C7 /* main.m in Sources */,
+				A551DC2719B638F8001F75C7 /* GNAppDelegate.m in Sources */,
+				A551DC5419B63B2F001F75C7 /* GNNoteTableViewCell.m in Sources */,
+				A551DC3319B638F8001F75C7 /* GNNoteViewController.m in Sources */,
+				A551DC2D19B638F8001F75C7 /* GlobusNotes.xcdatamodeld in Sources */,
+				A57C94EF19B788C000213C65 /* GNPreferences.m in Sources */,
+				A551DC3019B638F8001F75C7 /* GNNotesListViewController.m in Sources */,
+				A551DC5719B63EA9001F75C7 /* GNNotesProvider.m in Sources */,
+				A551DC6319B6C82F001F75C7 /* Note.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A551DC3619B638F8001F75C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A551DC4919B638F8001F75C7 /* GlobusNotesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A551DC4119B638F8001F75C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A551DC1019B638F8001F75C7 /* GlobusNotes */;
+			targetProxy = A551DC4019B638F8001F75C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A551DC1F19B638F8001F75C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A551DC2019B638F8001F75C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A551DC2819B638F8001F75C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A551DC2919B638F8001F75C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A551DC4519B638F8001F75C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A551DC4619B638F8001F75C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A551DC4A19B638F8001F75C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A551DC4B19B638F8001F75C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A551DC4D19B638F8001F75C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlobusNotes/GlobusNotes-Prefix.pch";
+				INFOPLIST_FILE = "GlobusNotes/GlobusNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5c5bcd2c-01ea-4cd1-ab56-c54e55749e9e";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A551DC4E19B638F8001F75C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlobusNotes/GlobusNotes-Prefix.pch";
+				INFOPLIST_FILE = "GlobusNotes/GlobusNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5c5bcd2c-01ea-4cd1-ab56-c54e55749e9e";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A551DC5019B638F8001F75C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GlobusNotes.app/GlobusNotes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlobusNotes/GlobusNotes-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GlobusNotesTests/GlobusNotesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A551DC5119B638F8001F75C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GlobusNotes.app/GlobusNotes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GlobusNotes/GlobusNotes-Prefix.pch";
+				INFOPLIST_FILE = "GlobusNotesTests/GlobusNotesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A551DC0C19B638F8001F75C7 /* Build configuration list for PBXProject "GlobusNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A551DC4A19B638F8001F75C7 /* Debug */,
+				A551DC4B19B638F8001F75C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A551DC4C19B638F8001F75C7 /* Build configuration list for PBXNativeTarget "GlobusNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A551DC4D19B638F8001F75C7 /* Debug */,
+				A551DC4E19B638F8001F75C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A551DC4F19B638F8001F75C7 /* Build configuration list for PBXNativeTarget "GlobusNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A551DC5019B638F8001F75C7 /* Debug */,
+				A551DC5119B638F8001F75C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A551DC2B19B638F8001F75C7 /* GlobusNotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A551DC2C19B638F8001F75C7 /* GlobusNotes.xcdatamodel */,
+			);
+			currentVersion = A551DC2C19B638F8001F75C7 /* GlobusNotes.xcdatamodel */;
+			path = GlobusNotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A551DC0919B638F8001F75C7 /* Project object */;
+}
