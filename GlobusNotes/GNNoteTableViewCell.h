@@ -12,7 +12,7 @@
 @interface GNNoteTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *title;
-@property (strong, nonatomic) IBOutlet UILabel *detail;
+@property (weak, nonatomic) IBOutlet UILabel *detail;
 @property (nonatomic, strong) Note *note;
 
 - (void)refresh;

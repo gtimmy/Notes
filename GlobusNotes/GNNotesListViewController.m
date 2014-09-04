@@ -12,11 +12,12 @@
 #import "GNNotesProvider.h"
 
 #define kRowHeight 100.0
+#define kCellIdentifier @"Cell"
 
 @interface GNNotesListViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (strong, nonatomic) IBOutlet UILabel *noNotesLabel;
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *noNotesLabel;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -32,7 +33,6 @@
     [super viewDidLoad];
     notes = [[GNNotesProvider sharedInstance] notesList];
     self.tableView.allowsMultipleSelectionDuringEditing = NO;
-    self.tableView.rowHeight = kRowHeight;
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.searchDisplayController.searchResultsDelegate = self;
@@ -80,29 +80,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    GNNoteTableViewCell *cell = (GNNoteTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if (cell == nil) {
-        cell = [[GNNoteTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
-    NSAttributedString *attributedString;
-    Note *note = nil;
-    if (tableView == self.searchDisplayController.searchResultsTableView) {
-        note = [searchResults objectAtIndex:indexPath.row];
-        attributedString = [attributedSearchResults objectAtIndex:indexPath.row];
-        
-    } else {
-        note = [notes objectAtIndex:indexPath.row];
-    }
-    [cell setNote:note];
-    [cell refresh];
-    
-    
-    if (attributedString) {
-        cell.title.attributedText = attributedString;
-    }
+    GNNoteTableViewCell *cell = (GNNoteTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
+    cell = [self configureCell:cell forTableView:tableView atIndexPath:indexPath];
     return cell;
 }
 
@@ -130,7 +109,45 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    GNNoteTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
+    
+    cell = [self configureCell:cell forTableView:tableView atIndexPath:indexPath];
+    [cell layoutSubviews];
+    
+    CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    return height + 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     return kRowHeight;
+}
+
+- (GNNoteTableViewCell *)configureCell:(GNNoteTableViewCell *)cell forTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath
+{
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        cell = [self.tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
+    }
+    if (cell == nil) {
+        cell = [[GNNoteTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellIdentifier];
+    }
+    
+    NSAttributedString *attributedString;
+    Note *note = nil;
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        note = [searchResults objectAtIndex:indexPath.row];
+        attributedString = [attributedSearchResults objectAtIndex:indexPath.row];
+    } else {
+        note = [notes objectAtIndex:indexPath.row];
+    }
+    [cell setNote:note];
+    [cell refresh];
+    
+    
+    if (attributedString) {
+        cell.title.attributedText = attributedString;
+    }
+    return cell;
 }
 
 #pragma mark - Segue

@@ -11,9 +11,9 @@
 
 @interface GNNoteViewController () <UITextViewDelegate>
 
-@property (strong, nonatomic) IBOutlet UIBarButtonItem *doneButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
-@property (strong, nonatomic) IBOutlet UILabel *noteDateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *noteDateLabel;
 
 - (void)configureView;
 
